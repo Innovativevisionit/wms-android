@@ -52,5 +52,5 @@ dependencies {
 
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
-
+    implementation ("com.google.android.material:material:1.2.1")
 }

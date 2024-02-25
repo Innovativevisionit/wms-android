@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                                     System.out.println(response.body());
                                     if (response.isSuccessful()) {
                                         Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(MainActivity.this, LoginScreen.class);
+                                        Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
                                         assert response.body() != null;
                                         intent.putExtra("username", response.body().getEmpId());
                                         startActivity(intent);
